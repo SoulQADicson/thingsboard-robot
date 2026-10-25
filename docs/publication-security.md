@@ -22,7 +22,7 @@ do conteúdo versionado.
 - Actions externas fixadas por SHA consultado nos repositórios oficiais, com
   indicação da versão principal. Token com contents: read e checkout sem persistir
   credenciais. Não usar pull_request_target para executar código de terceiros.
-- Secret de login do CI será configurado como repository secret, não como arquivo
+- Secret de login do CI configurado como repository secret, não como arquivo
   nem argumento literal no shell. A conta é a de demonstração no banco efêmero.
 
 O email noreply preserva atribuição ao perfil GitHub. O nome público do perfil,
@@ -34,8 +34,9 @@ de dado sensível ou vulnerabilidade.
 ## Estado e evidências
 
 As verificações de arquivos e baseline `69b89f9` passaram sem achados de credenciais.
-O status da publicação e da primeira execução no GitHub deve ser conferido no
-repositório e na aba Actions; validação local não é execução remota.
+Publicação pública concluída, com secret scanning e push protection habilitados.
+A primeira execução Linux passou, e os artefatos baixados também passaram na
+varredura. Detalhes e links em [Primeira execução](ci-first-run.md).
 Se a CLI solicitar autenticação, o responsável autoriza pelo fluxo oficial do
 GitHub; nunca enviar senha ou token por chat.
 

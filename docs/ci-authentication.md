@@ -1,5 +1,10 @@
 # Etapa 7 — CI de autenticação com GitHub Actions
 
+Atualização: publicação autorizada concluída, com origin configurado e primeiro
+job Linux aprovado (CT01–CT03). TB_PASSWORD foi configurado como Secret.
+Consulte [Primeira execução](ci-first-run.md) para o resultado remoto. As seções
+de preparação e evidências locais abaixo registram o estado anterior à publicação.
+
 ## Objetivo e arquivos
 
 Executar CT01–CT03 em uma máquina de CI preparada explicitamente, com laboratório
