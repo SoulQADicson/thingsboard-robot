@@ -1,0 +1,28 @@
+# Ambiente Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Configuracoes locais e segredos
+.env
+.env.*
+!.env.example
+
+# Evidencias geradas pelo Robot Framework / Browser
+results/
+reports/
+output.xml
+log.html
+report.html
+playwright-log.txt
+browser/
+*.webm
+trace.zip
+
+# Editor e sistema operacional
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

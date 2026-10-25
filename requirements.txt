@@ -1,0 +1,7 @@
+# Dependencias diretas: versoes observadas na .venv existente.
+# A compatibilidade funcional ainda precisa ser validada.
+# Isto nao e um lockfile das dependencias transitivas.
+robotframework==7.5
+robotframework-browser==20.6.0
+robotframework-requests==0.9.7
+psycopg[binary]==3.3.6
