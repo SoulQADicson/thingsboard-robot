@@ -28,3 +28,6 @@ não há casos de integração definidos nesta etapa.
 Detalhes, limitações e histórico da execução em
 [Execução de autenticação](authentication-execution.md). O resumo estruturado está
 em `results/authentication/output.xml`; artefatos são locais e ignorados pelo Git.
+
+CT01, CT02 e CT03 também passaram na execução GitHub Actions 40232265170 em Linux;
+consulte [evidências remotas](ci-first-run.md). Demais casos continuam não executados.

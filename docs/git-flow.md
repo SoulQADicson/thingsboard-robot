@@ -1,5 +1,12 @@
 # Etapa 6 — preparação do Git Flow
 
+Atualização: bootstrap autorizado concluído em `69b89f9`; main e develop foram
+criadas com essa baseline. A etapa 7 ocorre em feature/ci-authentication, derivada
+de develop. O pipeline foi commitado e as três branches foram publicadas após
+autorização, sem merge. As seções
+abaixo preservam a análise e o plano da preparação inicial, já executado após
+autorização. Consulte `ci-authentication.md` para a etapa atual.
+
 ## Objetivo e estado observado
 
 Criar histórico rastreável do framework antes de implementar CI/CD. Em
