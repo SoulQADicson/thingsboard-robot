@@ -7,8 +7,9 @@ requisitos e, futuramente, executada por GitHub Actions.
 ## Estado atual
 
 CT01, CT02 e CT03 de autenticação UI estão implementados e passaram na execução
-local com Robot Framework e Browser Library. Ainda não há testes de API,
-integração ou pipeline implementados. A configuração
+local com Robot Framework e Browser Library. Ainda não há testes de API ou
+integração. O workflow de CI está preparado e validado localmente, mas ainda não
+foi executado no GitHub. A configuração
 Docker do laboratório foi instalada e iniciada localmente. Consulte as
 [evidências de execução](docs/lab-execution.md) para resultados e limitações.
 O arquivo `AGENTS.md` contém as diretrizes de trabalho e deve ser lido antes de
@@ -29,6 +30,10 @@ e a [matriz de rastreabilidade](docs/traceability.md). O desenho inicial foi val
 A etapa 5 implementa login válido, senha incorreta e acesso direto sem sessão:
 veja [execução de autenticação](docs/authentication-execution.md) para configuração,
 comandos, resultado real, explicação dos Resources e leitura dos relatórios.
+
+A etapa 7 prepara o [CI de autenticação](docs/ci-authentication.md), com laboratório
+temporário e publicação de relatórios como artefatos. Consulte o guia para o
+Secret necessário, verificações realizadas e limites da validação local.
 
 ## Estrutura e responsabilidades
 
@@ -147,9 +152,9 @@ Esse comando não foi executado na criação da estrutura.
 
 O fluxo previsto usa `main`, `develop` e `feature/*`. A preparação está em
 [Git Flow](docs/git-flow.md), incluindo o escopo do primeiro commit local.
-O repositório ainda não tem commits nem remoto configurado. O bootstrap e a
-criação de develop aguardam autorização explícita; nenhum push ou merge foi feito.
-O CI/CD será tratado na etapa seguinte, após essa preparação.
+O bootstrap autorizado foi registrado em `69b89f9`, e develop foi criada a partir
+dele. A branch atual é `feature/ci-authentication`, com o workflow ainda sem commit.
+Não há remoto configurado; nenhum push ou merge foi feito.
 
 ## Atividade de revisão
 
